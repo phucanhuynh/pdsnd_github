@@ -166,6 +166,7 @@ def user_stats(df):
     """Displays statistics on bikeshare users."""
 
     print('\nCalculating User Stats...\n')
+    #provide time to calculate duration at the end
     start_time = time.time()
 
     # TO DO: Display counts of user types
