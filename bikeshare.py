@@ -78,6 +78,7 @@ def load_data(city, month, day):
     df['day_of_week'] = df['Start Time'].dt.weekday_name
 
     # extract hour from the Start Time column to create an hour column
+    # this column is used for further function after this
     df['hour'] = df['Start Time'].dt.hour
 
     # filter by month if applicable
@@ -206,8 +207,6 @@ def user_display_row(df):
 
 
 def main():
-    #df = get_filters()
-    #print(df)
     while True:
         city, month, day = get_filters()
         print(city, month, day)
