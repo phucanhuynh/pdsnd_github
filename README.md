@@ -10,7 +10,8 @@ Upload project bikeshare python to Github
 The project is to ask user's input information to display statistic for bike share in 3 cities: New York, Chicago and Washington.
 
 ### Files used
-Include the files used
+bikeshare.py
+files folked from Udacity
 
 ### Credits
 It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
