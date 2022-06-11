@@ -27,7 +27,7 @@ def get_filters():
             break
         else:
             print('Please check your input')
-    
+
     # TO DO: get user input for month (all, january, february, ... , june)
     month_input = True
     month = ''
@@ -39,7 +39,7 @@ def get_filters():
             break
         else:
             print('Please check your input')
-    
+
     # TO DO: get user input for day of week (all, monday, tuesday, ... sunday)
     day_input = True
     day = ''
@@ -76,8 +76,9 @@ def load_data(city, month, day):
     # extract month and day of week from Start Time to create new columns
     df['month'] = df['Start Time'].dt.month
     df['day_of_week'] = df['Start Time'].dt.weekday_name
-    
+
     # extract hour from the Start Time column to create an hour column
+    # this column is used for further function after this
     df['hour'] = df['Start Time'].dt.hour
 
     # filter by month if applicable
@@ -169,14 +170,14 @@ def user_stats(df):
 
     # TO DO: Display counts of user types
     print('Count of user types: ',df['User Type'].value_counts())
-    
-    # No display gender and year of birth if they don't exist       
+
+    # No display gender and year of birth if they don't exist
     # TO DO: Display counts of gender
     if 'Gender' in df:
         print('Count of gender: ',df['Gender'].value_counts())
     else:
         print('Gender stats cannot be calculated because Gender does not appear in the dataframe')
-   
+
 # TO DO: Display earliest, most recent, and most common year of birth
     if 'Birth Year' in df:
         print('Earliest year of birth: ', df['Birth Year'].min())
@@ -202,8 +203,8 @@ def user_display_row(df):
             view_display = input("Do you wish to continue? Enter yes or no? ").lower()
             if view_display == 'no':
                 break
-    
-    
+
+
 def main():
     #df = get_filters()
     #print(df)
