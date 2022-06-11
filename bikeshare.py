@@ -206,8 +206,6 @@ def user_display_row(df):
 
 
 def main():
-    #df = get_filters()
-    #print(df)
     while True:
         city, month, day = get_filters()
         print(city, month, day)
