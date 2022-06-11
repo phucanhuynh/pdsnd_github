@@ -7,7 +7,7 @@
 Upload project bikeshare python to Github
 
 ### Description
-Describe what your project is about and what it does
+The project is to ask user's input information to display statistic for bike share in 3 cities.
 
 ### Files used
 Include the files used
