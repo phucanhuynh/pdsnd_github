@@ -201,7 +201,7 @@ def user_display_row(df):
             print(df.iloc[start_loc:end_loc])
             start_loc += 5
             end_loc += 5
-            view_display = input("Do you wish to continue? Enter yes or no? ").lower()
+            view_display = input("Do you wish to continue for next 5 rows? Enter yes or no? ").lower()
             if view_display == 'no':
                 break
 
